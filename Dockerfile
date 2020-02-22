@@ -1,7 +1,7 @@
 FROM alpine
 
 RUN apk update && \
-    apk add alpine-sdk git make python python-dev swig && \
+    apk add alpine-sdk git make python python-dev openssl-dev swig && \
     wget https://www.nlnetlabs.nl/downloads/ldns/ldns-1.7.1.tar.gz && \
     tar xf ldns-1.7.1.tar.gz && \
     cd ldns-1.7.1 && \
