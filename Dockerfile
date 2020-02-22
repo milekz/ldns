@@ -7,5 +7,6 @@ RUN apk update && \
     cd ldns-1.7.1 && \
     ./configure --with-drill --with-examples --with-pyldns  && \
     make && \
-    make install
+    make install && \
+    apk del alpine-sdk
     
